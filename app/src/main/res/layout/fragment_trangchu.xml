@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_trangchu">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="350dp"
+            android:iconifiedByDefault="false"
+            android:background="@drawable/search"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:queryHint="Tìm kiếm tại đây"
+            android:id="@+id/search"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/searchview"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/banner1" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="190dp"
+      android:id="@+id/trangchu"/>
+
+
+
+</FrameLayout>
